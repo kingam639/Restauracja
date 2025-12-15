@@ -1,4 +1,4 @@
-from platnosc import wybierz_sposob_platnosci, wykonaj_platnosc, wyswietl_status_platnosci
+# from platnosc import wyswietl_status_platnosci # wykonaj_platnosc, wybierz_sposob_platnosci,
 
 class Zamowienie:
     def __init__(self, menu):
@@ -18,12 +18,12 @@ class Zamowienie:
                 if produkt in rodzaj_menu:
                     self.wartosc_zamowienia += rodzaj_menu[produkt]
 
-    def oplac_zamowienie(self):
-        konto_klienta = 300
-        konto_maca = 20000
-        print("Do zaplaty masz:", self.wartosc_zamowienia)
-        sposob_platnosci = wybierz_sposob_platnosci()
-        # TODO 6: Rozliczenie zakupu
-        rozliczenie_klienta, rozliczenie_maca = (
-            wykonaj_platnosc(self.wartosc_zamowienia, konto_klienta, konto_maca))
-        wyswietl_status_platnosci(sposob_platnosci, rozliczenie_klienta, rozliczenie_maca)
+    # def oplac_zamowienie(self):
+    #     konto_klienta = 300
+    #     konto_maca = 20000
+    #     print("Do zaplaty masz:", self.wartosc_zamowienia)
+    #     sposob_platnosci = wybierz_sposob_platnosci()
+    #     # TODO 6: Rozliczenie zakupu
+    #     rozliczenie_klienta, rozliczenie_maca = (
+    #         wykonaj_platnosc(self.wartosc_zamowienia, konto_klienta, konto_maca))
+    #     wyswietl_status_platnosci(sposob_platnosci, rozliczenie_klienta, rozliczenie_maca)
